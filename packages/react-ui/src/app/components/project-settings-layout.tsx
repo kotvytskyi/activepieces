@@ -45,29 +45,9 @@ export default function ProjectSettingsLayout({
       icon: <SunMoon size={iconSize} />,
     },
     {
-      title: t('Team'),
-      href: authenticationSession.appendProjectRoutePrefix('/settings/team'),
-      icon: <Users size={iconSize} />,
-      hasPermission: checkAccess(Permission.READ_PROJECT_MEMBER),
-    },
-    {
       title: t('Pieces'),
       href: authenticationSession.appendProjectRoutePrefix('/settings/pieces'),
       icon: <Puzzle size={iconSize} />,
-    },
-    {
-      title: t('Alerts'),
-      href: authenticationSession.appendProjectRoutePrefix('/settings/alerts'),
-      icon: <Bell size={iconSize} />,
-      hasPermission: checkAccess(Permission.READ_ALERT),
-    },
-    {
-      title: t('Environments'),
-      href: authenticationSession.appendProjectRoutePrefix(
-        '/settings/environments',
-      ),
-      icon: <GitBranch size={iconSize} />,
-      hasPermission: checkAccess(Permission.READ_GIT_REPO),
     },
   ];
 

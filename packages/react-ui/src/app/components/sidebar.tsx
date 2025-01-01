@@ -110,7 +110,7 @@ export function Sidebar({
     <div>
       <div className="flex min-h-screen w-full  ">
         {!hideSideNav && (
-          <aside className=" border-r sticky  top-0 h-screen bg-muted/50 w-[65px] ">
+          <aside className=" border-r sticky  top-0 h-screen bg-muted/50 w-[65px] "  style={{'backgroundColor': '#282e38', 'color': '#ffffff'}}>
             <ScrollArea>
               <nav className="flex flex-col items-center h-screen  sm:py-5  gap-5 p-2 ">
                 <Link

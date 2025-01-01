@@ -64,9 +64,9 @@ export function generateTheme({
 }
 
 export const defaultTheme = generateTheme({
-    primaryColor: '#6e41e2',
+    primaryColor: '#1976d2',
     websiteName: 'Activepieces',
-    fullLogoUrl: 'https://cdn.activepieces.com/brand/full-logo.png',
-    favIconUrl: 'https://cdn.activepieces.com/brand/favicon.ico',
-    logoIconUrl: 'https://cdn.activepieces.com/brand/logo.svg',
+    fullLogoUrl: 'https://cider-hr-development.azurewebsites.net/assets/images/logo-icon.png',
+    favIconUrl: 'https://cider-hr-development.azurewebsites.net/assets/images/logo-icon.png',
+    logoIconUrl: 'https://cider-hr-development.azurewebsites.net/company-logo.03c61dae6c749816.svg',
 })

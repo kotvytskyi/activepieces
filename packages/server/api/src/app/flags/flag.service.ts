@@ -186,13 +186,13 @@ export const flagService = {
             },
             {
                 id: ApFlagId.SHOW_DOCS,
-                value: system.getEdition() !== ApEdition.ENTERPRISE,
+                value: false,
                 created,
                 updated,
             },
             {
                 id: ApFlagId.SHOW_COMMUNITY,
-                value: system.getEdition() !== ApEdition.ENTERPRISE,
+                value: false,
                 created,
                 updated,
             },

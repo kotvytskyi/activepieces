@@ -556,6 +556,9 @@
       "@activepieces/piece-shopify": [
         "packages/pieces/community/shopify/src/index.ts"
       ],
+      "@activepieces/piece-sidra": [
+        "packages/pieces/community/sidra/src/index.ts"
+      ],
       "@activepieces/piece-simplepdf": [
         "packages/pieces/community/simplepdf/src/index.ts"
       ],

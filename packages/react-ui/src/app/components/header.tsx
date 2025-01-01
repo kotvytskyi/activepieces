@@ -42,7 +42,7 @@ export const Header = () => {
             <InviteUserDialog />
             <UsageLimitsButton />
             {showPlatformAdminDashboard && (
-              <Link to={isInPlatformAdmin ? '/' : '/platform'}>
+              <Link to={isInPlatformAdmin ? '/' : '/platform/setup/ai'}>
                 <Button
                   variant={'outline'}
                   size="sm"
