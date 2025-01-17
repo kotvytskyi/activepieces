@@ -1,6 +1,8 @@
 
 import { createPiece, PieceAuth, Property } from "@activepieces/pieces-framework";
-import { getEmployee } from "./lib/actions/get-employee";
+import { getEmployee, getEmployees } from "./lib/actions/get-employee";
+import { createTask } from "./lib/actions/create-task";
+import { employeeCreated } from "./lib/triggers/employee-created";
 
 export const auth = PieceAuth.CustomAuth({
   description: 'Please refer to this guide to get your api credentials: https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account',
@@ -25,6 +27,6 @@ export const sidra = createPiece({
   minimumSupportedRelease: '0.36.1',
   logoUrl: "https://cider-hr-development.azurewebsites.net/assets/images/logo-icon.png",
   authors: [],
-  actions: [getEmployee],
-  triggers: [],
+  actions: [getEmployee, getEmployees, createTask],
+  triggers: [employeeCreated],
 });
